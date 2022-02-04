@@ -22,7 +22,9 @@ def pregunta_01():
     40
 
     """
-    return
+    a = len(tbl0)
+    return a
+
 
 
 def pregunta_02():
@@ -33,7 +35,9 @@ def pregunta_02():
     4
 
     """
-    return
+    a = tbl0.shape[1]
+    return a
+
 
 
 def pregunta_03():
@@ -50,7 +54,11 @@ def pregunta_03():
     Name: _c1, dtype: int64
 
     """
-    return
+    a = tbl0['_c1'].value_counts()
+    print(a.sort_index(0))
+    return a.sort_index(0)
+
+pregunta_03()
 
 
 def pregunta_04():
